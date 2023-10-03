@@ -5,8 +5,8 @@ import css from './Searchbar.module.css';
 
 export const Searchbar = ({ searchMovies }) => {
   const [query, setQuery] = useState('');
-  const [searchParams, setSearchParams] = useSearchParams();
-
+  //const [searchParams, setSearchParams] = useSearchParams();
+  const setSearchParams = useSearchParams();
   const handleInput = e => {
     setQuery(e.target.value);
   };
