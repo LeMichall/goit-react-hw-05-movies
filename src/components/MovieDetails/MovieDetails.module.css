@@ -1,0 +1,61 @@
+.moviesBtn {
+  background-color: #c1c7d3;
+
+  border: 2px solid rgb(167, 167, 167);
+  height: 50px;
+  width: 100px;
+  border-radius: 45px;
+  margin-top: 60px;
+  margin-left: 30px;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #ec8d35;
+    border-color: #ec8d35;
+    box-shadow: 0px 15px 20px rgba(51, 50, 56, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    transition: all 0.3s ease 0s;
+  }
+}
+
+.detailsImgBox {
+  display: flex;
+}
+.detailsImg {
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.detailsBox {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.genresList {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0;
+}
+
+.addInfo {
+  margin-left: 30px;
+}
+
+.addInfoTitle {
+  margin-left: 40px;
+}
+
+.addInfoList {
+  list-style: none;
+}
+
+.addInfoLink {
+  text-decoration: none;
+  color: black;
+}
