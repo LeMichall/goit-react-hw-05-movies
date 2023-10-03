@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import css from './Searchbar.module.css';
@@ -7,13 +7,6 @@ export const Searchbar = ({ searchMovies }) => {
   const [query, setQuery] = useState('');
   const [, setSearchParams] = useSearchParams();
 
-  // useEffect(() => {
-  //   if (query) {
-  //     setSearchParams({ query: query.toLowerCase() });
-  //   } else {
-  //     setSearchParams({});
-  //   }
-  // }, [query, setSearchParams]);
   const handleInput = e => {
     setQuery(e.target.value);
   };
