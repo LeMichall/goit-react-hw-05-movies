@@ -7,19 +7,20 @@ export const Searchbar = ({ searchMovies }) => {
   const [query, setQuery] = useState('');
   const [, setSearchParams] = useSearchParams();
 
-  useEffect(() => {
-    if (query) {
-      setSearchParams({ query: query.toLowerCase() });
-    } else {
-      setSearchParams({});
-    }
-  }, [query, setSearchParams]);
+  // useEffect(() => {
+  //   if (query) {
+  //     setSearchParams({ query: query.toLowerCase() });
+  //   } else {
+  //     setSearchParams({});
+  //   }
+  // }, [query, setSearchParams]);
   const handleInput = e => {
     setQuery(e.target.value);
   };
   const handleSubmit = e => {
     e.preventDefault();
     searchMovies(query.toLowerCase());
+    setSearchParams({ query: query.toLowerCase() });
   };
   return (
     <form className={css.formBox} onSubmit={handleSubmit}>
